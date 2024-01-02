@@ -56,6 +56,15 @@ const asyncRoutes = {
       name: 'switchList'
     },
     {
+      path: 'cards',
+      component: () => import('@/views/style-modal/cards/index'),
+      meta: {
+        title: '卡片组件',
+        noCache: true
+      },
+      name: 'cards'
+    },
+    {
       path: 'others',
       component: () => import('@/views/style-modal/others/index'),
       meta: {
