@@ -1,0 +1,156 @@
+@import './default.scss';
+@import './flex.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 15px 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  .block {
+    width: 150px;
+    height: 150px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    .el-image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// 标签打印样式
+.print-label-table {
+  .label-name {
+    text-align: left;
+    .name-en {
+      margin-top: 4px;
+    }
+  }
+  .cell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .cell-multi {
+    height: 30px;
+    line-height: 15px;
+    overflow: hidden; //超出文本隐藏
+    text-overflow: ellipsis; //溢出省略号显示
+    display: -webkit-box; //将对象作为弹性伸缩盒子
+    -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式-从上到下垂直排列
+    -webkit-line-clamp: 2; //这个属性不是css的规范属性，需要组合上面两个属性，数组代表显示的行数,如2,3,4....
+  }
+  .cell-hand {
+    height: 14px;
+  }
+}
+
+// 打印记录表头的样式
+.print-record-table-title {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #333333;
+  th,
+  td {
+    border: 1px solid #b3b5b9;
+    padding: 10px;
+    text-align: center;
+  }
+  .conpany-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+}
+
+// 查看详情时，修改form大小为mini的样式
+.check-detail-form {
+  .el-form-item--mini.el-form-item {
+    margin-bottom: 5px;
+  }
+}
+
+// 小型表单，最大宽度 500px，居中
+.small-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+// 中型型表单，最大宽度 800px，居中
+.medium-form {
+  max-width: 800px;
+  margin: 0 auto;
+}

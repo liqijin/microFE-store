@@ -1,0 +1,101 @@
+
+// margin、padding
+@for $idx from 1 to 200 {
+  .m#{$idx} {
+    margin: #{$idx}px;
+  }
+  .ml#{$idx} {
+    margin-left: #{$idx}px;
+  }
+  .mb#{$idx} {
+    margin-bottom: #{$idx}px;
+  }
+  .mr#{$idx} {
+    margin-right: #{$idx}px;
+  }
+  .mt#{$idx} {
+    margin-top: #{$idx}px;
+  }
+  .p#{$idx} {
+    padding: #{$idx}px;
+  }
+  .pl#{$idx} {
+    padding-left: #{$idx}px;
+  }
+  .pb#{$idx} {
+    padding-bottom: #{$idx}px;
+  }
+  .pr#{$idx} {
+    padding-right: #{$idx}px;
+  }
+  .pt#{$idx} {
+    padding-top: #{$idx}px;
+  }
+  .vw#{$idx} {
+    width: #{$idx}vw;
+  }
+  .vh#{$idx} {
+    height: #{$idx}vh;
+  }
+  .height#{$idx} {
+    height: #{$idx}px;
+  }
+  .width#{$idx} {
+    width: #{$idx}px;
+  }
+  .min-w#{$idx} {
+    min-width: #{$idx}px;
+  }
+  .min-w#{$idx} {
+    min-width: #{$idx}px;
+  }
+  .max-w#{$idx} {
+    max-width: #{$idx}px;
+  }
+  .min-h#{$idx} {
+    min-height: #{$idx}px;
+  }
+  .max-h#{$idx} {
+    max-height: #{$idx}px;
+  }
+  .per-h#{$idx} {
+    height: $idx / 100 * 100%;
+  }
+  .per-w#{$idx} {
+    width: $idx / 100 * 100%;
+  }
+  .min-per-w#{$idx} {
+    min-width: $idx / 100 * 100%;
+  }
+  .min-per-w#{$idx} {
+    min-width: $idx / 100 * 100%;
+  }
+  .max-per-w#{$idx} {
+    max-width: $idx / 100 * 100%;
+  }
+  .min-per-h#{$idx} {
+    min-height: $idx / 100 * 100%;
+  }
+  .max-per-h#{$idx} {
+    max-height: $idx / 100 * 100%;
+  }
+}
+
+$num: 100;
+
+@while $num <= 1000 {
+  .weight#{$num} {
+    font-weight: $num;
+  }
+  $num: $num + 100;
+}
+
+@for $idx from 1 to 100 {
+  .font#{$idx} {
+    font-size: #{$idx}px;
+  }
+}
+
+.cur-pin {
+  cursor: pointer;
+}
