@@ -70,6 +70,11 @@ export default {
           documentType: 'switchs'
         },
         {
+          label: '卡片',
+          value: '6',
+          documentType: 'cards'
+        },
+        {
           label: '其他',
           value: '4',
           documentType: 'others'
